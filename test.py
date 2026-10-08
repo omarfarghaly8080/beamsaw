@@ -1,7 +1,7 @@
 from asyncua.sync import Client
 
 PLC_IP = "192.168.0.1"  # Replace with your PLC IP if different
-
+PLC_PORT=4840
 
 client = Client(f"opc.tcp://{PLC_IP}:{PLC_PORT}", timeout=3)
 
